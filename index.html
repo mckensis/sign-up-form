@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -25,22 +26,22 @@
             <h2>Let's do this!</h2>
             <form action="" method="get" name="sign-up">
                 <label for="first-name">First Name
-                <input type="text" id="first-name"></label>
+                <input type="text" id="first-name" maxlength="20"></label>
 
                 <label for="last-name">Last Name
-                <input type="text" id="last-name"></label>
+                <input type="text" id="last-name" maxlength="25"></label>
 
                 <label for="email">Email
-                <input type="email" id="email"></label>
+                <input type="email" id="email" maxlength="30"></label>
 
                 <label for="phone-number">Phone Number
-                <input type="tel" id="phone-number"></label>
+                <input type="tel" id="phone-number" pattern="[0-9]" maxlength="11"></label>
 
-                <label for="password">Password
-                <input type="password" id="password-initial"></label>
+                <label for="password" id="initial-label">Password
+                <input type="password" id="password-initial" class="password" required></label>
 
-                <label for="password-confirm">Confirm Password
-                <input type="password" id="password-confirm"></label>
+                <label for="password-confirm" id="confirm-label">Confirm Password
+                <input type="password" id="password-confirm" class="password" required></label>
             </form>
         </section>
         <section class="bottom">

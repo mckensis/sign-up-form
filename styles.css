@@ -60,16 +60,20 @@ section.banner {
 
 label {
     text-transform: uppercase;
-    width: 200px;
+    width: 300px;
     letter-spacing: 2px;
 }
 
 input {
     height: 3rem;
-    width: 25rem;
+    width: 300px;
     border: 1px solid #E5E7EB;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
 }
-
 
 form {
     display: flex;
@@ -123,4 +127,26 @@ h2 {
 .bottom a {
     color: #596D48;
     text-decoration: none;
+}
+
+input:focus {
+    border: 5px solid lightblue;
+    box-shadow: 0px 0px 20px lightblue;
+}
+
+input.password.error {
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+
+input.password.match {
+    border: 2px solid green;
+    box-shadow: 0px 0px 5px greenyellow;
+}
+
+.error::after {
+    content: "*Passwords do not match";
+    text-transform: capitalize;
+    color: red;
+    margin-left: 0.5rem;
 }
