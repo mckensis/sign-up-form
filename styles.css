@@ -12,12 +12,13 @@
 body {
     display: flex;
     height: 100vh;
-    overflow: hidden;
     font-size: 16px;
+    max-height: 100vh;
 }
 
 .left-side {
     width: 50%;
+    max-width: 50%;
     height: 100vh;
     background-image: url(images/bg.avif);
     background-repeat: no-repeat;
@@ -37,6 +38,7 @@ section.banner {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100vh;
     background-color: lightgray;
 }
 
@@ -105,9 +107,9 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem 5rem;
-    padding-right: 15rem;
-    padding-bottom: 2rem;
+    gap: 2rem 3rem;
+    margin-right: 3rem;
+    padding-bottom: 1rem;
     margin-bottom: 2rem;
 }
 
