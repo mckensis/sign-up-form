@@ -12,16 +12,16 @@
 body {
     display: flex;
     height: 100vh;
+    overflow: hidden;
     font-size: 16px;
 }
 
 .left-side {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background-image: url(images/bg.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 section.banner {
@@ -46,16 +46,69 @@ section.banner {
     padding-left: 3rem;
 }
 
+.top p:first-of-type {
+    margin-top: 5rem;
+}
 
 .top {
-    padding-right: 10rem;
+    margin-right: 10rem;
+}
+
+.top p {
+    padding-bottom: 3rem;
+    font-size: 2rem;
 }
 
 .mid {
     background-color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     border-top: 1px solid grey;
     box-shadow: 0px 1px 10px grey;
+}
+
+.bottom button {
+    padding: 1rem 5rem;
+    margin-bottom: 1rem;
+    background-color: #596D48;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.bottom p {
+    font-size: 1.5rem;
+}
+
+.bottom a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+img {
+    max-height: 80%;
+}
+
+h1 {
+    font-family: "Norse";
+    font-size: 6rem;
+    color: white;
+}
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem 5rem;
+    padding-right: 15rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 label {
@@ -73,60 +126,6 @@ input {
     padding-left: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem 5rem;
-    padding-right: 15rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-
-img {
-    max-height: 80%;
-}
-
-h1 {
-    font-family: "Norse";
-    font-size: 6rem;
-    color: white;
-}
-
-.top p {
-    padding-bottom: 3rem;
-    font-size: 2rem;
-}
-
-h2 {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    font-size: 2rem;
-    font-weight: 100;
-}
-
-.top p:first-of-type {
-    margin-top: 5rem;
-}
-
-.right-side button {
-    padding: 1rem 5rem;
-    margin-bottom: 2rem;
-    background-color: #596D48;
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-}
-
-.bottom p {
-    font-size: 32px;
-}
-
-.bottom a {
-    color: #596D48;
-    text-decoration: none;
 }
 
 input:focus {
